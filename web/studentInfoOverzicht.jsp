@@ -9,6 +9,7 @@
 </head>
 <body>
 <table class="tabel">
+    <a href="servlet?task=home">back</a>
     <thead>
     <th>achternaam</th>
     <th>voornaam</th>

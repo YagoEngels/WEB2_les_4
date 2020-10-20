@@ -11,16 +11,6 @@
     <title>student info : persoonlijk </title>
   </head>
   <body>
-  <%  DatabaseStudent databaseStudent = new DatabaseStudent();
-    String naam = (String) request.getAttribute("achternaam");
-    String voornaam = (String)request.getAttribute("voornaam");
-    System.out.println(naam);
-    System.out.println(voornaam);
-    String abc = databaseStudent.getleeftijdEnRichting(naam,voornaam);
-    if (abc.trim().isEmpty()){
-      abc = "er is geen informatie over deze student probeer een anderen student";
-    }
-  %>
-  <p><%=abc%></p>
+  <p><%=request.getAttribute("TheOneString")%></p>
   </body>
 </html>
